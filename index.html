@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌱 Economia Sustentável - Projeto Agrinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;600&display=swap');
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+       
+        .titulo-agrinho {
+            font-family: 'Comic Neue', cursive;
+        }
+       
+        .hero {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        }
+       
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+       
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+       
+        .folha {
+            animation: flutuar 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 to-amber-50">
+
+    <!-- NAVBAR -->
+    <nav class="bg-emerald-700 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-4xl">🌾</div>
+                <h1 class="titulo-agrinho text-3xl font-bold tracking-wider">AGRINHO</h1>
+                <span class="text-xl font-medium">Economia Sustentável</span>
+            </div>
+            <div class="flex gap-8 text-lg font-medium">
+                <a href="#inicio" class="hover:text-amber-300 transition">Início</a>
+                <a href="#pilares" class="hover:text-amber-300 transition">Pilares</a>
+                <a href="#modelos" class="hover:text-amber-300 transition">Modelos</a>
+                <a href="#agrinho" class="hover:text-amber-300 transition">Projeto Agrinho</a>
+                <a href="#dicas" class="hover:text-amber-300 transition">Dicas Verdes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="inicio" class="hero text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-6xl md:text-7xl font-bold titulo-agrinho leading-none mb-6">
+                    Economia<br>Sustentável<br>no Campo! 🌱
+                </h1>
+                <p class="text-2xl mb-8 font-light">
+                    Aprenda com o <strong>Projeto Agrinho</strong> como produzir, consumir e viver de forma que o planeta agradece!
+                </p>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.getElementById('pilares').scrollIntoView({behavior:'smooth'})"
+                            class="bg-white text-emerald-700 px-8 py-4 rounded-2xl font-bold text-xl hover:bg-amber-300 hover:text-emerald-800 transition">
+                        Explorar agora →
+                    </button>
+                    <div class="text-5xl">🌍🌾🚜</div>
+                </div>
+            </div>
+           
+            <div class="relative">
+                <div class="bg-white/20 backdrop-blur-md rounded-3xl p-8 border border-white/30 text-center">
+                    <div class="text-8xl mb-6">🌱🌻🌾</div>
+                    <h2 class="text-4xl font-bold titulo-agrinho">Futuro verde começa hoje!</h2>
+                    <p class="mt-4 text-xl">Desenvolvimento + Meio Ambiente + Pessoas = Economia Sustentável</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- O QUE É ECONOMIA SUSTENTÁVEL -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <span class="bg-emerald-200 text-emerald-800 px-6 py-2 rounded-full font-medium text-lg">📚 Aprendendo com o Agrinho</span>
+            <h2 class="text-5xl font-bold mt-6 text-emerald-900">O que é Economia Sustentável?</h2>
+        </div>
+       
+        <div class="bg-white rounded-3xl shadow-xl p-10 text-lg leading-relaxed">
+            <p class="text-emerald-800">
+                A economia sustentável é um modelo de produção e consumo que busca o equilíbrio entre o desenvolvimento financeiro,
+                a preservação ambiental e a equidade social. Ela estimula o uso eficiente dos recursos naturais, a transição para energias renováveis
+                e a inclusão social, garantindo que as necessidades atuais sejam atendidas sem comprometer as futuras gerações.
+            </p>
+        </div>
+    </section>
+
+    <!-- PILARES -->
+    <section id="pilares" class="bg-emerald-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-5xl font-bold mb-12 titulo-agrinho">Os 3 Pilares Fundamentais</h2>
+           
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pilar Ecológico -->
+                <div class="bg-emerald-800 rounded-3xl p-8 card-hover text-center">
+                    <div class="text-6xl mb-4">🌍</div>
+                    <h3 class="text-3xl font-bold mb-3">Ecológico</h3>
+                    <p class="text-emerald-100">Redução da pegada de carbono, combate ao desperdício e uso de energias limpas (solar, eólica).</p>
+                </div>
+               
+                <!-- Pilar Social -->
+                <div class="bg-emerald-800 rounded-3xl p-8 card-hover text-center">
+                    <div class="text-6xl mb-4">👩‍🌾</div>
+                    <h3 class="text-3xl font-bold mb-3">Social</h3>
+                    <p class="text-emerald-100">Equidade, diversidade, direitos trabalhistas e desenvolvimento das comunidades rurais.</p>
+                </div>
+               
+                <!-- Pilar Econômico -->
+                <div class="bg-emerald-800 rounded-3xl p-8 card-hover text-center">
+                    <div class="text-6xl mb-4">💰</div>
+                    <h3 class="text-3xl font-bold mb-3">Econômico</h3>
+                    <p class="text-emerald-100">Inovação, lucro e redução de custos a longo prazo com processos sustentáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODELOS PRÁTICOS -->
+    <section id="modelos" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-center text-5xl font-bold mb-12 text-emerald-900 titulo-agrinho">Modelos que o Agrinho apoia</h2>
+       
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-emerald-100">
+                <div class="text-4xl mb-4">♻️</div>
+                <h3 class="text-2xl font-bold text-emerald-700">Economia Circular</h3>
+                <p class="mt-3 text-gray-600">Reaproveitar, consertar, reciclar e dar nova vida aos materiais do campo.</p>
+            </div>
+           
+            <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-emerald-100">
+                <div class="text-4xl mb-4">🌊</div>
+                <h3 class="text-2xl font-bold text-emerald-700">Economia Azul</h3>
+                <p class="mt-3 text-gray-600">Uso sustentável dos oceanos, rios e recursos hídricos.</p>
+            </div>
+           
+            <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-emerald-100">
+                <div class="text-4xl mb-4">🌾</div>
+                <h3 class="text-2xl font-bold text-emerald-700">Bioeconomia</h3>
+                <p class="mt-3 text-gray-600">Usar recursos biológicos renováveis do campo (plantas, animais, microrganismos).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETO AGRINHO -->
+    <section id="agrinho" class="bg-gradient-to-r from-amber-400 to-emerald-500 py-16 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold titulo-agrinho mb-8">Como o Projeto Agrinho se conecta com a Economia Sustentável?</h2>
+                    <p class="text-xl leading-relaxed">
+                        O Projeto Agrinho, do SENAR, ensina crianças e jovens a valorizarem a agricultura familiar, o cuidado com o solo,
+                        a preservação da água e o respeito ao meio ambiente. Tudo isso é a base da economia sustentável no campo!
+                    </p>
+                    <ul class="mt-8 space-y-4 text-lg">
+                        <li class="flex items-center gap-3">🌱 Plantio consciente e rotação de culturas</li>
+                        <li class="flex items-center gap-3">💧 Captação de água da chuva</li>
+                        <li class="flex items-center gap-3">♻️ Reaproveitamento de resíduos orgânicos</li>
+                        <li class="flex items-center gap-3">👨‍🌾 Geração de renda com respeito ao planeta</li>
+                    </ul>
+                </div>
+                <div class="bg-white/20 backdrop-blur-lg rounded-3xl p-10 text-center text-6xl">
+                    🚜🌻🌾<br>
+                    <span class="block mt-6 text-4xl font-bold titulo-agrinho">O futuro do campo começa na escola!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DICAS PRÁTICAS -->
+    <section id="dicas" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-center text-5xl font-bold mb-12 text-emerald-900">Dicas Verdes do Agrinho para você praticar</h2>
+       
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-green-400 to-emerald-500 text-white p-8 rounded-3xl card-hover">
+                <p class="text-2xl font-medium">1. Use energia solar em casa ou na escola</p>
+            </div>
+            <div class="bg-gradient-to-br from-amber-400 to-orange-500 text-white p-8 rounded-3xl card-hover">
+                <p class="text-2xl font-medium">2. Faça compostagem com restos de comida</p>
+            </div>
+            <div class="bg-gradient-to-br from-sky-400 to-blue-500 text-white p-8 rounded-3xl card-hover">
+                <p class="text-2xl font-medium">3. Economize água no dia a dia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-900 text-emerald-200 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-2xl titulo-agrinho">Projeto Agrinho • Economia Sustentável</p>
+            <p class="mt-3">Feito com muito carinho e amor pelo futuro do nosso planeta 🌍</p>
+            <p class="text-sm mt-8">Copie este código e salve como arquivo .html para usar!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+        console.log("%c✅ Página do Projeto Agrinho - Economia Sustentável carregada com sucesso!", "color: #10b981; font-size: 18px; font-weight: bold");
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌱 Economia Sustentável - Projeto Agrinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;600&display=swap');
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+       
+        .titulo-agrinho {
+            font-family: 'Comic Neue', cursive;
+        }
+       
+        .hero {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        }
+       
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+       
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+       
+        .folha {
+            animation: flutuar 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 to-amber-50">
+
+    <!-- NAVBAR -->
+    <nav class="bg-emerald-700 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-4xl">🌾</div>
+                <h1 class="titulo-agrinho text-3xl font-bold tracking-wider">AGRINHO</h1>
+                <span class="text-xl font-medium">Economia Sustentável</span>
+            </div>
+            <div class="flex gap-8 text-lg font-medium">
+                <a href="#inicio" class="hover:text-amber-300 transition">Início</a>
+                <a href="#pilares" class="hover:text-amber-300 transition">Pilares</a>
+                <a href="#modelos" class="hover:text-amber-300 transition">Modelos</a>
+                <a href="#agrinho" class="hover:text-amber-300 transition">Projeto Agrinho</a>
+                <a href="#dicas" class="hover:text-amber-300 transition">Dicas Verdes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="inicio" class="hero text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-6xl md:text-7xl font-bold titulo-agrinho leading-none mb-6">
+                    Economia<br>Sustentável<br>no Campo! 🌱
+                </h1>
+                <p class="text-2xl mb-8 font-light">
+                    Aprenda com o <strong>Projeto Agrinho</strong> como produzir, consumir e viver de forma que o planeta agradece!
+                </p>
+                <div class="flex items-center gap-4">
+                    <button onclick="document.getElementById('pilares').scrollIntoView({behavior:'smooth'})"
+                            class="bg-white text-emerald-700 px-8 py-4 rounded-2xl font-bold text-xl hover:bg-amber-300 hover:text-emerald-800 transition">
+                        Explorar agora →
+                    </button>
+                    <div class="text-5xl">🌍🌾🚜</div>
+                </div>
+            </div>
+           
+            <div class="relative">
+                <div class="bg-white/20 backdrop-blur-md rounded-3xl p-8 border border-white/30 text-center">
+                    <div class="text-8xl mb-6">🌱🌻🌾</div>
+                    <h2 class="text-4xl font-bold titulo-agrinho">Futuro verde começa hoje!</h2>
+                    <p class="mt-4 text-xl">Desenvolvimento + Meio Ambiente + Pessoas = Economia Sustentável</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- O QUE É ECONOMIA SUSTENTÁVEL -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <span class="bg-emerald-200 text-emerald-800 px-6 py-2 rounded-full font-medium text-lg">📚 Aprendendo com o Agrinho</span>
+            <h2 class="text-5xl font-bold mt-6 text-emerald-900">O que é Economia Sustentável?</h2>
+        </div>
+       
+        <div class="bg-white rounded-3xl shadow-xl p-10 text-lg leading-relaxed">
+            <p class="text-emerald-800">
+                A economia sustentável é um modelo de produção e consumo que busca o equilíbrio entre o desenvolvimento financeiro,
+                a preservação ambiental e a equidade social. Ela estimula o uso eficiente dos recursos naturais, a transição para energias renováveis
+                e a inclusão social, garantindo que as necessidades atuais sejam atendidas sem comprometer as futuras gerações.
+            </p>
+        </div>
+    </section>
+
+    <!-- PILARES -->
+    <section id="pilares" class="bg-emerald-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-5xl font-bold mb-12 titulo-agrinho">Os 3 Pilares Fundamentais</h2>
+           
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pilar Ecológico -->
+                <div class="bg-emerald-800 rounded-3xl p-8 card-hover text-center">
+                    <div class="text-6xl mb-4">🌍</div>
+                    <h3 class="text-3xl font-bold mb-3">Ecológico</h3>
+                    <p class="text-emerald-100">Redução da pegada de carbono, combate ao desperdício e uso de energias limpas (solar, eólica).</p>
+                </div>
+               
+                <!-- Pilar Social -->
+                <div class="bg-emerald-800 rounded-3xl p-8 card-hover text-center">
+                    <div class="text-6xl mb-4">👩‍🌾</div>
+                    <h3 class="text-3xl font-bold mb-3">Social</h3>
+                    <p class="text-emerald-100">Equidade, diversidade, direitos trabalhistas e desenvolvimento das comunidades rurais.</p>
+                </div>
+               
+                <!-- Pilar Econômico -->
+                <div class="bg-emerald-800 rounded-3xl p-8 card-hover text-center">
+                    <div class="text-6xl mb-4">💰</div>
+                    <h3 class="text-3xl font-bold mb-3">Econômico</h3>
+                    <p class="text-emerald-100">Inovação, lucro e redução de custos a longo prazo com processos sustentáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODELOS PRÁTICOS -->
+    <section id="modelos" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-center text-5xl font-bold mb-12 text-emerald-900 titulo-agrinho">Modelos que o Agrinho apoia</h2>
+       
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-emerald-100">
+                <div class="text-4xl mb-4">♻️</div>
+                <h3 class="text-2xl font-bold text-emerald-700">Economia Circular</h3>
+                <p class="mt-3 text-gray-600">Reaproveitar, consertar, reciclar e dar nova vida aos materiais do campo.</p>
+            </div>
+           
+            <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-emerald-100">
+                <div class="text-4xl mb-4">🌊</div>
+                <h3 class="text-2xl font-bold text-emerald-700">Economia Azul</h3>
+                <p class="mt-3 text-gray-600">Uso sustentável dos oceanos, rios e recursos hídricos.</p>
+            </div>
+           
+            <div class="bg-white rounded-3xl p-8 shadow-lg card-hover border border-emerald-100">
+                <div class="text-4xl mb-4">🌾</div>
+                <h3 class="text-2xl font-bold text-emerald-700">Bioeconomia</h3>
+                <p class="mt-3 text-gray-600">Usar recursos biológicos renováveis do campo (plantas, animais, microrganismos).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETO AGRINHO -->
+    <section id="agrinho" class="bg-gradient-to-r from-amber-400 to-emerald-500 py-16 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold titulo-agrinho mb-8">Como o Projeto Agrinho se conecta com a Economia Sustentável?</h2>
+                    <p class="text-xl leading-relaxed">
+                        O Projeto Agrinho, do SENAR, ensina crianças e jovens a valorizarem a agricultura familiar, o cuidado com o solo,
+                        a preservação da água e o respeito ao meio ambiente. Tudo isso é a base da economia sustentável no campo!
+                    </p>
+                    <ul class="mt-8 space-y-4 text-lg">
+                        <li class="flex items-center gap-3">🌱 Plantio consciente e rotação de culturas</li>
+                        <li class="flex items-center gap-3">💧 Captação de água da chuva</li>
+                        <li class="flex items-center gap-3">♻️ Reaproveitamento de resíduos orgânicos</li>
+                        <li class="flex items-center gap-3">👨‍🌾 Geração de renda com respeito ao planeta</li>
+                    </ul>
+                </div>
+                <div class="bg-white/20 backdrop-blur-lg rounded-3xl p-10 text-center text-6xl">
+                    🚜🌻🌾<br>
+                    <span class="block mt-6 text-4xl font-bold titulo-agrinho">O futuro do campo começa na escola!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DICAS PRÁTICAS -->
+    <section id="dicas" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-center text-5xl font-bold mb-12 text-emerald-900">Dicas Verdes do Agrinho para você praticar</h2>
+       
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-green-400 to-emerald-500 text-white p-8 rounded-3xl card-hover">
+                <p class="text-2xl font-medium">1. Use energia solar em casa ou na escola</p>
+            </div>
+            <div class="bg-gradient-to-br from-amber-400 to-orange-500 text-white p-8 rounded-3xl card-hover">
+                <p class="text-2xl font-medium">2. Faça compostagem com restos de comida</p>
+            </div>
+            <div class="bg-gradient-to-br from-sky-400 to-blue-500 text-white p-8 rounded-3xl card-hover">
+                <p class="text-2xl font-medium">3. Economize água no dia a dia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-900 text-emerald-200 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-2xl titulo-agrinho">Projeto Agrinho • Economia Sustentável</p>
+            <p class="mt-3">Feito com muito carinho e amor pelo futuro do nosso planeta 🌍</p>
+            <p class="text-sm mt-8">Copie este código e salve como arquivo .html para usar!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+        console.log("%c✅ Página do Projeto Agrinho - Economia Sustentável carregada com sucesso!", "color: #10b981; font-size: 18px; font-weight: bold");
+    </script>
+</body>
+</html>
